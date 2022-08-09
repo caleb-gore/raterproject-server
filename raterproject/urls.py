@@ -20,11 +20,13 @@ from rest_framework import routers
 from raterprojectapi.views import (register_user,
                                     login_user,
                                     GameView,
-                                    CategoryView)
+                                    CategoryView,
+                                    ReviewView)
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'games', GameView, 'game')
 router.register(r'categories', CategoryView, 'category')
+router.register(r'reviews', ReviewView, 'review')
 
 urlpatterns = [
     path('register', register_user),
