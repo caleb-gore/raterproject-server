@@ -1,0 +1,16 @@
+[
+    {
+        "model": "raterprojectapi.game",
+        "pk": 1,
+        "fields": {
+            "title": "Assassins Creed",
+            "description": "Assassin's Creed is an action-adventure video game developed by Ubisoft Montreal and published by Ubisoft. It is the first installment in the Assassin's Creed series. The game was released for PlayStation 3 and Xbox 360 in November 2007. A Microsoft Windows version titled Assassin's Creed: Director's Cut Edition and containing additional content was released in April 2008.",
+            "designer": "Ubisoft",
+            "year_released": 2007,
+            "number_of_players": 1,
+            "estimated_time_to_play": 15,
+            "age_recommendation": 17,
+            "player": 1
+        }
+    }
+]
