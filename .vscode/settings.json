@@ -5,5 +5,5 @@
     "--load-plugins=pylint_django",
     "--django-settings-module=raterproject.settings"
   ],
-  "cSpell.words": ["raterproject", "raterprojectapi"]
+  "cSpell.words": ["raterproject", "raterprojectapi", "Ubisoft"]
 }

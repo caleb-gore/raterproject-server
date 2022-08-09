@@ -16,13 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
-from rest_framework import routers 
+from rest_framework import routers
 from raterprojectapi.views import (register_user,
                                     login_user,
-                                    GameView)
+                                    GameView,
+                                    CategoryView)
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'games', GameView, 'game')
+router.register(r'categories', CategoryView, 'category')
 
 urlpatterns = [
     path('register', register_user),
