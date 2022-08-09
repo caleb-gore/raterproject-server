@@ -1,0 +1,11 @@
+[
+    {
+        "model": "raterprojectapi.review",
+        "pk": 1,
+        "fields": {
+            "review": "This game is awesome! Love it!",
+            "game": 1,
+            "player": 1
+        }
+    }
+]
