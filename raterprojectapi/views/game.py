@@ -8,6 +8,18 @@ from raterprojectapi.models import Game
 class GameView(ViewSet):
     """Level up games view"""
 
+    def retrieve(self, request, pk):
+        """Handle GET requests for single game
+        
+        Returns:
+            Response -- JSON serialized game
+        """
+        try: 
+            game = Game.objects.get(pk=pk)
+            serializer = GameSerializer(game)
+            return Response(serializer.data)
+        except Game.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
     def list (self, request):
         """Handle GET requests to get all games
 
@@ -29,7 +41,7 @@ class GameSerializer(serializers.ModelSerializer):
                 'description',
                 'designer',
                 'year_released',
-                'number of players',
+                'number_of_players',
                 'estimated_time_to_play',
                 'age_recommendation',
                 'player')
